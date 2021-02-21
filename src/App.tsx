@@ -1,11 +1,26 @@
-import React, { FunctionComponent } from 'react';
+import React from 'react';
+import logo from './assets/images/ep-logo.svg';
+import './App.css';
 
-export const App: FunctionComponent = () => {
-
+function App() {
   return (
-    <section 
-      style={{ display:'grid', minHeight:'100vh', color: '#86C460', placeItems: 'center', }}>
-      <h1 >EasyPeasy CMS</h1>
-    </section>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Easy CMS
+        </p>
+        <a
+          className="App-link"
+          href="http://fireball-cms-staging.s3-website.eu-west-2.amazonaws.com/login"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Staging Live
+        </a>
+      </header>
+    </div>
   );
 }
+
+export default App;
